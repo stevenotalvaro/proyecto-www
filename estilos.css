@@ -1,0 +1,144 @@
+:root {
+    --menu-color: #fff;
+    --width: 30px;
+    --height: 4px;
+}
+
+body {
+    margin: 0;
+}
+
+.top-bar {
+    background: tomato;
+}
+
+.icon-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: tomato;
+}
+
+header {
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.icon-menu__bar {
+    background: var(--menu-color);
+    width: var(--width);
+    height: var(--height);
+    border-radius: 2px;
+    position: relative;
+}
+
+.icon-menu__bar::after,
+.icon-menu__bar::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: var(--width);
+    height: var(--height);
+    border-radius: 2px;
+    background: var(--menu-color);
+    top: -.5em;
+}
+
+.icon-menu__bar::after {
+    top: .5em;
+}
+
+.menu {
+    background: white;
+    padding-left: 0;
+    margin-top: -570px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 50%;
+    list-style: none;
+    transform: translateX(-380%);
+    transition: transform .5s;
+}
+
+.menu--show {
+    transform: translateX(0);
+}
+
+.menu__item {
+    padding: 1em;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.menu__item a {
+    display: block;
+}
+
+.menu__link {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background: tomato;
+}
+
+.menu__item a:hover {
+    color: white;
+}
+
+.menu__item img {
+    float: left;
+}
+
+.nav-menu {
+    width: 400px;
+    height: 570px;
+    margin: 0 auto;
+}
+
+.menu__perfil {
+    width: 100px;
+    height: 100px;
+    margin-left: 25%;
+    align-content: center;
+}
+
+.menu span {
+    margin-left: 30%;
+}
+
+.flex-container {
+    width: 400px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex-container1 {
+    width: 200px;
+    height: 570px;
+}
+
+.flex-container2 {
+    width: 200px;
+    height: 570px;
+}
+
+.flex-items {
+    background-color: tomato;
+    color: white;
+    height: 115px;
+    width: 115px;
+    margin: .5em;
+}
+
+.icono-mujer {
+    width: 100px;
+    height: 100px;
+}
